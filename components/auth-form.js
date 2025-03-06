@@ -1,7 +1,7 @@
 'use client';
 import { useFormState } from 'react-dom';
 import Link from 'next/link';
-import { signup } from '@/actions/auth';
+import { signup } from '@/actions/auth-actions';
 
 export default function AuthForm({ mode }) {
   const [formState, formAction] = useFormState(signup, {});
